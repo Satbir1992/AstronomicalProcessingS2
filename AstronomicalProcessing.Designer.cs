@@ -72,6 +72,7 @@ namespace AstronomicalProcessing
             this.TextBoxHours.Size = new System.Drawing.Size(65, 21);
             this.TextBoxHours.TabIndex = 1;
             this.TextBoxHours.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TextBoxHours_KeyPress);
+            this.TextBoxHours.Validating += new System.ComponentModel.CancelEventHandler(this.TextBoxHours_Validating);
             // 
             // ButtonAdd
             // 
@@ -184,6 +185,7 @@ namespace AstronomicalProcessing
             this.ButtonMid.TabIndex = 11;
             this.ButtonMid.Text = "Mid";
             this.ButtonMid.UseVisualStyleBackColor = false;
+            this.ButtonMid.Click += new System.EventHandler(this.ButtonMid_Click);
             // 
             // ButtonMode
             // 
@@ -194,6 +196,7 @@ namespace AstronomicalProcessing
             this.ButtonMode.TabIndex = 12;
             this.ButtonMode.Text = "Mode";
             this.ButtonMode.UseVisualStyleBackColor = false;
+            this.ButtonMode.Click += new System.EventHandler(this.ButtonMode_Click);
             // 
             // ButtonAverage
             // 
@@ -204,6 +207,7 @@ namespace AstronomicalProcessing
             this.ButtonAverage.TabIndex = 13;
             this.ButtonAverage.Text = "Average";
             this.ButtonAverage.UseVisualStyleBackColor = false;
+            this.ButtonAverage.Click += new System.EventHandler(this.ButtonAverage_Click);
             // 
             // ButtonRange
             // 
@@ -214,6 +218,7 @@ namespace AstronomicalProcessing
             this.ButtonRange.TabIndex = 14;
             this.ButtonRange.Text = "Range";
             this.ButtonRange.UseVisualStyleBackColor = false;
+            this.ButtonRange.Click += new System.EventHandler(this.ButtonRange_Click);
             // 
             // ButtonLinearSearch
             // 
@@ -224,6 +229,7 @@ namespace AstronomicalProcessing
             this.ButtonLinearSearch.TabIndex = 15;
             this.ButtonLinearSearch.Text = "Linear Search";
             this.ButtonLinearSearch.UseVisualStyleBackColor = false;
+            this.ButtonLinearSearch.Click += new System.EventHandler(this.ButtonLinearSearch_Click);
             // 
             // TextBoxMid
             // 
@@ -232,6 +238,7 @@ namespace AstronomicalProcessing
             this.TextBoxMid.Name = "TextBoxMid";
             this.TextBoxMid.Size = new System.Drawing.Size(54, 42);
             this.TextBoxMid.TabIndex = 16;
+            this.TextBoxMid.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // TextBoxMode
             // 
@@ -240,6 +247,7 @@ namespace AstronomicalProcessing
             this.TextBoxMode.Name = "TextBoxMode";
             this.TextBoxMode.Size = new System.Drawing.Size(54, 42);
             this.TextBoxMode.TabIndex = 17;
+            this.TextBoxMode.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // TextBoxAverage
             // 
@@ -248,6 +256,7 @@ namespace AstronomicalProcessing
             this.TextBoxAverage.Name = "TextBoxAverage";
             this.TextBoxAverage.Size = new System.Drawing.Size(54, 42);
             this.TextBoxAverage.TabIndex = 18;
+            this.TextBoxAverage.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // TextBoxRange
             // 
@@ -256,6 +265,7 @@ namespace AstronomicalProcessing
             this.TextBoxRange.Name = "TextBoxRange";
             this.TextBoxRange.Size = new System.Drawing.Size(54, 42);
             this.TextBoxRange.TabIndex = 19;
+            this.TextBoxRange.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // AstronomicalProcessing
             // 
